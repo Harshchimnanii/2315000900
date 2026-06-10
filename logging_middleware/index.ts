@@ -5,7 +5,7 @@ import { LogStackType, LogLevelType, LogPackageType, LogPayload } from './types'
  * We use an AbortController to ensure the logging API call doesn't hang the client network.
  * We also fetch the auth token dynamically.
  */
-const LOG_API_ENDPOINT = "http://4.224.186.213/evaluation-service/logs";
+const LOG_API_ENDPOINT = "/api/logs";
 
 // Helper function to dynamically get the Bearer token
 // (Tujhe apna token localStorage ya jahan bhi save kiya h wahan se nikalna hai)
